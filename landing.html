@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
 <head>
 	<title>Landing Page</title>
 </head>
@@ -36,25 +39,110 @@
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+	}
+
+	.container{
+  	width: 100%;
+  	text-align: center;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+html {
+    height: 2000px;
+    background-color: #F4EFDC;
+    background-image: url(https://1tq45j21k9qr27g1703pgsja-wpengine.netdna-ssl.com/wp-content/uploads/2017/08/1960s-1280x640.jpg);
+    background-size: 100% auto;
+    background-position: top center;
+    background-attachment: fixed;
+    }
+
+body {
+    height: 100%;
+    background-image: linear-gradient(hsl(10,90,66), transparent 70%);
+    background-size: 100% 100%;
+    mix-blend-mode: difference;
+    }
+
+#example1 {
+  
+  padding: 15px;
+  background: lightblue;
+  background-clip: background-clip;
+  margin-left: 615px;
+  margin-right: 615px;
 }
 
-.container{
-  width: 100%;
-  text-align: center;
+#example2 {
+  
+  padding: 10px;
+  background: lightblue;
+  background-clip: background-clip;
+  margin-left: 685px;
+  margin-right: 685px;
+}
 
+#example3 {
+  
+  padding: 15px;
+  background: lightblue;
+  background-clip: background-clip;
+  margin-left: 570px;
+  margin-right: 570px;
+}
+
+#example4 {
+  
+  padding: 15px;
+  background: lightblue;
+  background-clip: background-clip;
+  margin-left: 610px;
+  margin-right: 610px;
+}
+
+#example5 {
+  
+  padding: 15px;
+  background: lightblue;
+  background-clip: background-clip;
+  margin-left: 600px;
+  margin-right: 600px;
+}
+
+html, body {
+	margin:0;padding:0;height:100%;width:100%
+}
+
+
+  	/*:root {
+  	--animate-delay: 10s;
+	}
+*/
 </style>
 <body style="font-family: Times New Roman;">
-<br><br><br><br><br>
-	<h3>Welcome to</h2>
+<br><br>
+
+	<!-- <table>
+		<td><div1><h3 class="animate__animated animate__backInLeft">Welcome to</h2></div></td>
+     	<td><div2><h1 class="animate__animated animate__backInRight"><u>Decades</u></h1></div></td>
+
+	</table> -->
+	<h3 class="animate__animated animate__backInLeft" id="example1">Welcome</h2>
+
+	<h3 class="animate__animated animate__backInRight" id="example2">to</h2>
 		
-	<h1><u>Decades</u></h1>
+	<h1 class="animate__animated animate__backInDown animate__delay-1s" id="example3"><i>Decades</i></h1>
 	<br>
-	<h5>a game for all</h5>
+	<h5 class="animate__animated animate__jello animate__delay-3s" id="example4">a game for all</h5>
 
 <br><br>
 
 	<div class="container">
-	  <a href="index.html" class="">Start</a>
+	  <a href="index.html" class="animate__animated animate__heartBeat" style="color: green; background-color: yellow"><p class="animate__animated animate__delay-4s animate__heartBeat animate__repeat-3" id="example5"><b>Start</b></p></a>
 	</div>
 
 </body>
